@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-ios-youtube-player"
+        version="0.0.1">
+
+  <name>iOS Youtube Player</name>
+  <description>Cordova iOS Youtube Player Plugin</description>
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/ios-youtube.js" target="js/ios-youtube.js"/>
+
+  <js-module src="www/ios-youtube.js" name="iOSYoutubePlayer">
+    <clobbers target="iOSYoutubePlayer" />
+  </js-module>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="iOSYoutubePlayer">
+        <param name="ios-package" value="CDViOSYoutubePlayer" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/YTPlayerView.h" target-dir="YTPlayerView"/>
+    <source-file src="src/ios/YTPlayerView.m" target-dir="YTPlayerView"/>
+    <header-file src="src/ios/CDViOSYoutubePlayer.h" target-dir="CDViOSYoutubePlayer"/>
+    <source-file src="src/ios/CDViOSYoutubePlayer.m" target-dir="CDViOSYoutubePlayer"/>
+  </platform>
+
+</plugin>
