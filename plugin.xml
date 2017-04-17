@@ -25,6 +25,8 @@
 
     <header-file src="src/ios/YTPlayerView.h" target-dir="YTPlayerView"/>
     <source-file src="src/ios/YTPlayerView.m" target-dir="YTPlayerView"/>
+    <header-file src="src/ios/ViewController.h" target-dir="ViewController"/>
+    <source-file src="src/ios/ViewController.m" target-dir="ViewController"/>
     <header-file src="src/ios/CDViOSYoutubePlayer.h" target-dir="CDViOSYoutubePlayer"/>
     <source-file src="src/ios/CDViOSYoutubePlayer.m" target-dir="CDViOSYoutubePlayer"/>
   </platform>
