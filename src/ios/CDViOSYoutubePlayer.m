@@ -2,7 +2,7 @@
 
 @implementation CDViOSYoutubePlayer
 
-- (void)openiOSVideo:(CDVInvokedUrlCommand*)command
+- (void)openVideo:(CDVInvokedUrlCommand*)command
 {
     if ( self.playerView == nil ) {
         self.playerView = [[YTPlayerView alloc]init];
