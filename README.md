@@ -9,5 +9,12 @@ This plugin plays youtube videos.
 
 Install the plugin
 
-    $ cordova plugin add
-# iosYoutubePlugin
+    $ cordova plugin add https://github.com/jagrajSidhu/iosYoutubePlugin.git --save
+
+Use following code in your component where playing videos
+
+```js
+    declare const iOSYoutubePlayer; // In case you are getting typescript errorMessage
+    // Enable plugin
+    iOSYoutubePlayer.openVideo('youtube-video-id', function(success){}, function(failure){});
+```

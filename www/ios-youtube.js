@@ -1,7 +1,7 @@
 /*global cordova, module*/
 
 module.exports = {
-    openVideo: function (name, successCallback, errorCallback) {
+    openVideo: function (id, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "iOSYoutubePlayer", "openVideo", [id]);
     }
 };

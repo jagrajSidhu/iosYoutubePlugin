@@ -2,12 +2,12 @@
 
 @implementation CDViOSYoutubePlayer
 
-- (void)openVideo:(CDVInvokedUrlCommand*)command
+- (void)openiOSVideo:(CDVInvokedUrlCommand*)command
 {
-    // if ( self.playerView == nil ) {
+    if ( self.playerView == nil ) {
         self.playerView = [[YTPlayerView alloc]init];
         self.playerView.delegate = self;
-    // }
+    }
 
     CDVPluginResult* pluginResult = nil;
     NSString* videoID = [command.arguments objectAtIndex:0];
@@ -25,7 +25,6 @@
 }
 
 - (void)playerView:(YTPlayerView *)playerView didChangeToState:(YTPlayerState)state {
-     NSLog(@" - - - - - - -JAGRAJ 1 -------------");
     switch (state) {
         case kYTPlayerStatePlaying:
             NSLog(@" - - - - - - -Started playback");
@@ -54,12 +53,8 @@
     }
 }
 - (void)playerView:(YTPlayerView *)playerView receivedError:(YTPlayerError)error {
-
-    NSLog(@"-----------JAGRAJ 2- - - - - - - - -  - -");
-
 }
 - (void)playerViewDidBecomeReady:(YTPlayerView *)playerView {
-    NSLog(@"-----------JAGRAJ 3- - - - - - - - -  - -");
     [self.playerView playVideo];
 }
 
