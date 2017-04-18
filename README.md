@@ -1,4 +1,4 @@
-# Cordova Social Embed Plugin
+# Cordova iOS Youtube Video Plugin
 
 This plugin plays youtube videos.
 
@@ -9,5 +9,5 @@ This plugin plays youtube videos.
 
 Install the plugin
 
-    $ cordova plugin add 
+    $ cordova plugin add
 # iosYoutubePlugin

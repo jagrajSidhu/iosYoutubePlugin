@@ -1,6 +1,8 @@
 #import <Cordova/CDV.h>
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
+#import "YTPlayerView.h"
 
-@interface CDViOSYoutubePlayer : CDVPlugin
-- (void) openVideo:(CDVInvokedUrlCommand*)command;
+@interface CDViOSYoutubePlayer : CDVPlugin <YTPlayerViewDelegate>
+    @property(nonatomic, strong) YTPlayerView *playerView;
+    - (void) openVideo:(CDVInvokedUrlCommand*)command;
 @end
