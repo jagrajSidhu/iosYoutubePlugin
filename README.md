@@ -15,6 +15,6 @@ Use following code in your component where playing videos
 
 ```js
     declare const iOSYoutubePlayer; // In case you are getting typescript errorMessage
-    // Enable plugin
-    iOSYoutubePlayer.openVideo('youtube-video-id', function(success){}, function(failure){});
+    // Play video
+    iOSYoutubePlayer.openVideo('youtube-video-id');
 ```
