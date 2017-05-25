@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-ios-youtube-player",
+  "version": "0.0.1",
+  "description": "Cordova Plugin iOS Youtube Player",
+  "cordova": {
+    "id": "cordova-plugin-ios-youtube-player",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagrajSidhu/iosYoutubePlugin.git"
+  },
+  "keywords": [
+    "ios-youtube",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "license": "Apache-2.0"
+}
